@@ -1,0 +1,18 @@
+# Ignorar arquivos binários e de compilação
+bin/
+obj/
+*.dll
+*.pdb
+
+# Ignorar configurações de usuário e IDE
+.vscode/
+*.user
+*.suo
+*.csproj.user
+
+# Ignorar arquivos temporários
+*.log
+*.tmp
+
+# Ignorar dependências
+/node_modules/
