@@ -5,6 +5,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(5052); // Configura o servidor para escutar na porta 5052
+});
 var app = builder.Build();
 
 app.UseWebSockets();
